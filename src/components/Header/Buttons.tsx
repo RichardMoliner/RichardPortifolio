@@ -18,7 +18,7 @@ const HeaderButtons = () => {
       spacing={1}
       direction="row"
       padding={0.8}
-      justifyContent="right"
+      justifyContent="right"  
       marginRight={1.5}
     >
       {UsedLinks.map((link, index) => (
