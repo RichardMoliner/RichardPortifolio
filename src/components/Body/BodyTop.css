@@ -1,10 +1,15 @@
-h1{
-    font-family: Tahoma;
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
+h1 {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
 }
-h2{
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
+h2 {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+}
+.waves-bg {
+  background: url("src/assets/background-waves-avatar.jpg") ;
+  height: 309px;
+  left: 0;
+  width: 100%;
 }
