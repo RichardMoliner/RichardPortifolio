@@ -1,22 +1,24 @@
 import React from "react";
 import { Stack } from "@mui/material";
+import Projects from "./Experiences";
 
 const StacksVetor = [
   { href: "https://react.dev/", icon: "react" },
   { href: "https://www.python.org/", icon: "python" },
+  { href: "https://www.djangoproject.com/", icon: "django" },
 ];
 
 const StacksUsed = () => {
   return (
     <>
       <Stack
-        spacing={1}
+        spacing={2}
         direction="row"
         justifyContent="center"
         alignItems="center"
       >
         <span style={{ fontFamily: "Kanit", fontWeight: "bold" }}>
-          Most used
+          {/* Stacks used: */}
         </span>
         {StacksVetor.map((stack) => (
           <a href={stack.href} target="_blank">

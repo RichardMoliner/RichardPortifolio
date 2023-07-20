@@ -32,8 +32,8 @@ const HeaderButtons = () => {
           sx={{
             "&:hover": {
               backgroundColor:
-                hoveredIndex === index ? "rgb(147, 153, 184)" : "transparent",
-              color: hoveredIndex === index ? "#fff" : "#1E90FF",
+                hoveredIndex === index ? "rgb(66, 96, 150)" : "transparent",
+              color: hoveredIndex === index ? "#fff" : "#426096",
             },
           }}
         >

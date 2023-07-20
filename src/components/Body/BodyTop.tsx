@@ -2,6 +2,7 @@ import { Grid, Avatar } from "@mui/material";
 import React from "react";
 import "./BodyTop.css";
 import StacksUsed from "./Stacks";
+import MediaCard from "./Experiences";
 
 const BodyTop = () => {
   return (
@@ -27,6 +28,9 @@ const BodyTop = () => {
       </div>
       <h2>Fullstack developer</h2>
       <StacksUsed />
+      <br />
+      <h3>My professional IT experiences:</h3>
+      <MediaCard />
     </>
   );
 };
