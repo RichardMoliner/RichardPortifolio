@@ -3,6 +3,7 @@ import React from "react";
 import "./BodyTop.css";
 import StacksUsed from "./Stacks";
 import MediaCard from "./Experiences";
+import RecipeReviewCard from "./Hobbies"
 
 const BodyTop = () => {
   return (
@@ -31,6 +32,11 @@ const BodyTop = () => {
       <br />
       <h3>My professional IT experiences:</h3>
       <MediaCard />
+      <br />
+      <h3>Some of my hobbies:</h3>
+      <div className="hobbies">
+        <RecipeReviewCard />
+      </div>
     </>
   );
 };

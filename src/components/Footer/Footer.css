@@ -1,12 +1,8 @@
 footer {
-  position: fixed;
   left: 0;
-  bottom: 0;
   width: 100%;
-  color: rgb(0, 0, 0);
   text-align: center;
   height: 4em;
   font-family: "Kanit", sans-serif;
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(147, 153, 184));
   font-size: 0.8em;
 }

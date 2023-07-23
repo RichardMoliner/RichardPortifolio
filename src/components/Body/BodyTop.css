@@ -18,3 +18,18 @@ h3 {
   font-family: "Kanit", sans-serif;
   font-weight: bold;
 }
+.hobbies {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Adicione uma media query para ajustar o layout em telas menores */
+@media (max-width: 1500) {
+  .hobbies {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
