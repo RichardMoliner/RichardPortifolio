@@ -38,7 +38,7 @@ const HeaderButtons = () => {
           }}
         >
           <img
-            src={`./public/assets/${link.icon}.png`}
+            src={`/assets/${link.icon}.png`}
             alt={link.icon}
             height={30}
           />

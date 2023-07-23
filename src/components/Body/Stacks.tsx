@@ -1,6 +1,5 @@
 import React from "react";
 import { Stack } from "@mui/material";
-import Projects from "./Experiences";
 
 const StacksVetor = [
   { href: "https://react.dev/", icon: "react" },
@@ -23,7 +22,7 @@ const StacksUsed = () => {
         {StacksVetor.map((stack) => (
           <a href={stack.href} target="_blank">
             <img
-              src={`public/assets/${stack.icon}-vetor.png`}
+              src={`/assets/${stack.icon}-vetor.png`}
               style={{ height: 30 }}
               alt={stack.icon}
             ></img>

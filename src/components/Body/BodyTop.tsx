@@ -20,7 +20,7 @@ const BodyTop = () => {
         <Grid item xs={12}>
           <Avatar
             alt="Richard Moliner"
-            src="public\assets\richard-avatar.jpg"
+            src="/assets/richard-avatar.jpg"
             sx={{ width: 278, height: 278}}
             
           />
