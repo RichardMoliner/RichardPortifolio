@@ -23,7 +23,7 @@ const StacksUsed = () => {
         {StacksVetor.map((stack) => (
           <a href={stack.href} target="_blank">
             <img
-              src={`src/assets/${stack.icon}-vetor.png`}
+              src={`public/assets/${stack.icon}-vetor.png`}
               style={{ height: 30 }}
               alt={stack.icon}
             ></img>

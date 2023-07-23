@@ -8,7 +8,7 @@ h2 {
   text-align: center;
 }
 .waves-bg {
-  background: url("src/assets/background-waves-avatar.jpg") ;
+  background: url("public/assets/background-waves-avatar.jpg") ;
   height: 309px;
   left: 0;
   width: 100%;
