@@ -27,7 +27,7 @@ const cardsData = [
     title: "My Family!",
     image: "/assets/family.png",
     description:
-      "Behind the greatest man, ALWAYS have the greatest woman. I found a wonderful one and I am so lucky to be married to Daiana. She's also a developer, an amazing one actually. We are a technological family! And this little one is Duque, our pet children!",
+      "Beside the greatest man, ALWAYS have the greatest woman. I found a wonderful one and I am so lucky to be married to Daiana. She's also a developer, an amazing one actually. We are a technological family! And this little one is Duque, our pet children!",
   },
 ];
 
