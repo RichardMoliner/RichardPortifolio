@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 
 const cardsData = [
   {
-    title: "We, developers, can surf too! Did you know that?",
+    title: "We, developers, can surf!",
     image: "/assets/surf-gopro.jpg",
     description:
       "Surf was always present in my family. My dad already surfed but began to have back pain, so he gave up the waves. My young brother, Pedro, and I surf together. We have so much fun! Aloha!",
