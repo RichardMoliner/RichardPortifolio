@@ -58,7 +58,7 @@ const carouselData = [
   
     return (
       <Box display="flex" justifyContent="center" alignItems="center">
-        <Box width="65%" sx={{maxWidth: 1500, width: "85%"}}>
+        <Box width="65%">
           <Slider {...settings}>
             {carouselData.map((item, index) => (
               <div key={index}>
