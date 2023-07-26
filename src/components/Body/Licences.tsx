@@ -1,9 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { Box } from '@mui/material';
+import { Box, IconButton } from '@mui/material';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Licences.css'
+import './Licences.css';
 
 const carouselData = [
     {
@@ -45,24 +45,44 @@ const carouselData = [
     
   ];
 
+  const CustomPrevArrow = (props) => (
+    <IconButton
+      {...props}
+      style={{ position: 'absolute', left: '10px', zIndex: 1, color: '#000'}}
+    >
+    </IconButton>
+  );
+
+  const CustomNextArrow = (props) => (
+    <IconButton
+      {...props}
+      style={{ position: 'absolute', right: '10px', zIndex: 1, color: '#000' }}
+    >
+    </IconButton>
+  );
+
+
   const CenteredCarousel = () => {
     const settings = {
-      dots: true,
+      dots: true, // Disable default dots
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
+      prevArrow: <CustomPrevArrow />,
+      nextArrow: <CustomNextArrow />,
     };
   
+    
     return (
       <Box display="flex" justifyContent="center" alignItems="center">
         <Box width="65%">
           <Slider {...settings}>
             {carouselData.map((item, index) => (
               <div key={index}>
-                <img src={item.imgSrc} alt={item.alt} style={{ width: '100%' }}  />
+                <img src={item.imgSrc} alt={item.alt} style={{ width: '100%' }} />
               </div>
             ))}
           </Slider>
