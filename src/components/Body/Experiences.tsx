@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 export default function MediaCard() {
   return (
     <>
-      <Card sx={{ margin: "auto", textAlign: "justify", width: "85%", backgroundColor: "azure" }}>
+      <Card sx={{ margin: "auto", textAlign: "justify", width: "85%", backgroundColor: "azure", boxShadow: 5 }}>
         <CardContent>
           <Typography
             gutterBottom
@@ -63,7 +63,7 @@ export default function MediaCard() {
         </CardContent>
       </Card>
       <br />
-      <Card sx={{ margin: "auto", textAlign: "justify", width: "85%", backgroundColor: "azure" }}>
+      <Card sx={{ margin: "auto", textAlign: "justify", width: "85%", backgroundColor: "azure", boxShadow: 5 }}>
         <CardContent>
           <Typography
             gutterBottom

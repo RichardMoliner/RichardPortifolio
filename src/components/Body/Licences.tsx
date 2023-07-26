@@ -57,12 +57,12 @@ const carouselData = [
     };
   
     return (
-      <Box display="flex" justifyContent="center" alignItems="center" >
-        <Box width="50%">
+      <Box display="flex" justifyContent="center" alignItems="center">
+        <Box width="65%" sx={{maxWidth: 1500, width: "85%"}}>
           <Slider {...settings}>
             {carouselData.map((item, index) => (
               <div key={index}>
-                <img src={item.imgSrc} alt={item.alt} style={{ width: '100%' }} />
+                <img src={item.imgSrc} alt={item.alt} style={{ width: '100%' }}  />
               </div>
             ))}
           </Slider>

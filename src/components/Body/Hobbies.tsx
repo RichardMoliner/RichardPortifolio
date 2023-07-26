@@ -3,10 +3,11 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import { Box } from "@mui/material";
 
 const cardsData = [
   {
-    title: "We, developers, can surf too! Did you knew that?",
+    title: "We, developers, can surf too! Did you know that?",
     image: "/assets/surf-gopro.jpg",
     description:
       "Surf was always present in my family. My dad already surfed but began to have back pain, so he gave up the waves. My young brother, Pedro, and I surf together. We have so much fun! Aloha!",
@@ -33,7 +34,9 @@ const cardsData = [
 
 export default function HobbiesCarousel() {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+    <div
+      style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+    >
       {cardsData.map((card, index) => (
         <Card
           key={index}
@@ -42,26 +45,34 @@ export default function HobbiesCarousel() {
             maxWidth: "370px",
             margin: "1em",
             backgroundColor: "beige",
+            boxShadow: "10"
           }}
         >
-          <Typography
-            variant="h6"
-            color="text.primary"
-            textAlign="center"
-            fontWeight="bold"
-            fontFamily="Kanit"
-            height="4em"
-          >
-            <strong>{card.title}</strong>
-          </Typography>
-          <CardMedia
-            component="img"
-            image={card.image}
-            alt={card.title}
-            height={350}
-          />
+          <Box sx={{ padding: "1em" }}>
+            <Typography
+              variant="h6"
+              color="text.primary"
+              textAlign="center"
+              fontWeight="bold"
+              fontFamily="Kanit"
+            >
+              <strong>{card.title}</strong>
+            </Typography>
+          </Box>
+          <Box sx={{ padding: ".5em"}}>
+            <CardMedia
+              component="img"
+              image={card.image}
+              alt={card.title}
+              height={350}
+            />
+          </Box>
           <CardContent>
-            <Typography variant="body1" color="text.secondary" textAlign="justify">
+            <Typography
+              variant="body1"
+              color="text.secondary"
+              textAlign="justify"
+            >
               {card.description}
             </Typography>
           </CardContent>
