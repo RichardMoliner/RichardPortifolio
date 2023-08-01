@@ -3,18 +3,20 @@ import { Stack } from "@mui/material";
 
 const StacksVetor = [
   { href: "https://react.dev/", icon: "react" },
+  { href: "https://nodejs.org/en", icon: "node" },
   { href: "https://www.python.org/", icon: "python" },
-  { href: "https://www.djangoproject.com/", icon: "django" },
+  { href: "https://www.djangoproject.com/", icon: "django" }
 ];
 
 const StacksUsed = () => {
   return (
     <>
       <Stack
-        spacing={2}
+        spacing={1}
         direction="row"
         justifyContent="center"
         alignItems="center"
+        justifyItems="center"
       >
         <span style={{ fontFamily: "Kanit", fontWeight: "bold" }}>
           {/* Stacks used: */}

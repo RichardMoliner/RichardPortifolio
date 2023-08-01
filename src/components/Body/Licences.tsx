@@ -11,8 +11,16 @@ const carouselData = [
       alt: 'React',
     },
     {
+      imgSrc: '/assets/noje-js-onebitcode.png',
+      alt: 'Node',
+    },
+    {
       imgSrc: '/assets/Python.png',
       alt: 'Python',
+    },
+    {
+      imgSrc: '/assets/Pythonando.jpeg',
+      alt: 'Pythonando Week',
     },
     {
       imgSrc: '/assets/CSharp.png',
@@ -33,10 +41,6 @@ const carouselData = [
     {
       imgSrc: '/assets/PowerBI.jpeg',
       alt: 'Microsoft Power BI',
-    },
-    {
-      imgSrc: '/assets/Pythonando.jpeg',
-      alt: 'Pythonando Week',
     },
     {
       imgSrc: '/assets/Scrum.jpeg',
@@ -70,7 +74,7 @@ const carouselData = [
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 5000,
       prevArrow: <CustomPrevArrow />,
       nextArrow: <CustomNextArrow />,
     };
@@ -78,11 +82,11 @@ const carouselData = [
     
     return (
       <Box display="flex" justifyContent="center" alignItems="center">
-        <Box width="65%">
+        <Box width="65%" >
           <Slider {...settings}>
             {carouselData.map((item, index) => (
               <div key={index}>
-                <img src={item.imgSrc} alt={item.alt} style={{ width: '100%' }} />
+                <img src={item.imgSrc} alt={item.alt} style={{ width: '100%', maxHeight: "50%" }} />
               </div>
             ))}
           </Slider>

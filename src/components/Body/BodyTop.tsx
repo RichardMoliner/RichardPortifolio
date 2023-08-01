@@ -22,7 +22,7 @@ const BodyTop = () => {
             <Avatar
               alt="Richard Moliner"
               src="/assets/richard-avatar.jpg"
-              sx={{ width: 278, height: 278 }}
+              sx={{ width: 263, height: 263, border: 10, borderColor: "white", justifyContent: "center" }}
             />
           </Grid>
         </Grid>
