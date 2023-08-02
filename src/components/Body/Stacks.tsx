@@ -15,8 +15,6 @@ const StacksUsed = () => {
         spacing={1}
         direction="row"
         justifyContent="center"
-        alignItems="center"
-        justifyItems="center"
       >
         <span style={{ fontFamily: "Kanit", fontWeight: "bold" }}>
           {/* Stacks used: */}

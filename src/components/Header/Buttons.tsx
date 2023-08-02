@@ -5,6 +5,7 @@ import { useState } from "react";
 const UsedLinks = [
   { href: "https://www.linkedin.com/in/richard-moliner/", icon: "linkedin" },
   { href: "https://github.com/RichardMoliner", icon: "github" },
+  { href: "mailto:richardmoliner1@gmail.com", icon: "email" }
 ];
 
 const HeaderButtons = () => {
